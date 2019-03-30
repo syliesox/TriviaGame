@@ -1,0 +1,102 @@
+body {
+    background-color: rgb(248, 226, 103);
+}
+
+.container {
+    background-color: white;
+    width: 65%;
+    padding: 60px;
+    margin-bottom: 100px;
+}
+
+.text-center {
+    font-size: 25px;
+}
+
+.title {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 50px;
+}
+
+#initial-message {
+    line-height: 2.5;
+}
+
+#startOverButton, #answerWas, #finished {
+    display: none;
+}
+
+#currentQuestion {
+    font-style: italic;
+    font-size: 16px;
+    margin: 0px;
+    padding: 0px;
+    text-align: right;
+}
+
+#timeLeft {
+    font-style: italic;
+    font-size: 16px;
+    margin: 0px;
+    padding: 0px;
+    text-align: right;
+}
+
+.question {
+    font-weight: bold; 
+    line-height: 2.5;
+}
+
+#answerList {
+    line-height: 1.6;
+}
+
+#message, #correctAnswer, #finalMessage, #percentage {
+    line-height: 2.5;
+}
+
+#rightAnswers, #wrongAnswers, #unanswered {
+    line-height: 1.6;
+}
+
+/* Conditional formatting for the messages */
+#correct, .correctMessage {
+    color: green;
+    font-weight: bold;
+    line-height: 2.5;
+    display: none;
+}
+
+#incorrect, .incorrectMessage {
+    color: red;
+    font-weight: bold;
+    line-height: 2.5;
+    display: none;
+}
+
+#endTime, .endTimeMessage {
+    color: purple;
+    font-weight: bold;
+    line-height: 2.5;
+    display: none;
+}
+
+#correct, #incorrect, #endTime {
+    line-height: 1.6;
+}
+
+#finished {
+    color: rgb(202, 133, 5);
+    font-weight: bold;
+    line-height: 2.5;
+}
+
+#correctAnswer {
+    font-style: italic;
+}
+
+#percentage {
+    font-weight: bold;
+    font-size: 50px;
+}

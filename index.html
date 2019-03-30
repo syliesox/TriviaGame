@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>US Trivia</title>
+    <link rel="icon" href="http://www.clker.com/cliparts/L/v/o/T/j/v/united-states-map-black-hi.png">
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Reset CSS linked -->
+    <link href="assets/css/reset.css" rel="stylesheet">
+    <!-- CSS Stylesheet linked -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <img src='assets/images/unitedstates.png' alt='United States image' height='200px' width='100%'>
+        <h1 class="text-center title">US States and Capitals Trivia!</h1>
+    </header>
+
+    <div class="container text-center">
+        <p id="initial-message">Press the "Start" button to begin!</p>
+        <button class='btn btn-danger' id='startButton'><h1>Start</h1></button>
+
+        <!-- Question Page -->
+        <div id=currentQuestion></div>
+        <div id=timeLeft></div>
+        <div class='question'></div>
+        <div class='answerList'></div>
+
+        <!-- Answer Page -->
+        <div id=currentQuestion></div>
+        <div id=timeLeft></div>
+
+        <div class="correctMessage">😁 That is correct! 😁</div>
+        <div class="incorrectMessage">😞 Sorry, that is not correct 😞</div>
+        <div class="endTimeMessage">⌛ Time's up! ⌛</div>
+        
+        <div id="answerWas">The correct answer was: <span id=correctAnswer></span></div>
+
+        <!-- Scoreboard -->
+        <div id="finished">Awesome, let's see your results...</div>
+        <div id=percentage></div>
+        <div id="correct"># of correct Answers:  <span id=rightAnswers></span></div>
+        <div id="incorrect"># of incorrect Answers:  <span id=wrongAnswers></span></div>
+        <div id="endTime"># of unanswered:  <span id=unanswered></span></div>
+        <button class='btn btn-danger' id='startOverButton'><h1>Start Over?</h1></button>
+
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+</html>
